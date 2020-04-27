@@ -11,6 +11,7 @@ const App = () => {
     message: "",
   });
 
+  //plays the game by assigning random values to the player and AI
   const playGame = () => {
     const randomValue = {
       player: Math.floor(Math.random() * 6) + 1,
@@ -48,6 +49,7 @@ const App = () => {
     }
   };
 
+  //clears the assigned value
   const clearGame = () => {
     setValues({
       player: 0,
